@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #ffe05e;
+  border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: #fff;
+  -webkit-transform: translate(1rem, 0);
+          transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+#buttons {
+  width: 100%;
+  display: flex;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  padding-bottom:13px;
+  border-radius: 5px;
+  font-weight: 400;
+  text-align: center;
+  margin-top:100px;
+  margin-left:10px;
+  width: 140px;
+  transition: all .3s ease;
+}
+
+.btn-roll{
+	background-color: transparent;
+  border: 2px solid #ffe05e;
+
+}
+.btn-roll span{
+	display: block;
+	position: relative;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+  transform-style:preserve-3d;
+	color: #ffc20d;
+  width: 100%;
+
+}
+.btn-roll span:after{
+	display: block;
+	content: "Google Play";
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+	transform:translate3d(0px,105%,0px) rotateX(-90deg);
+	color: #252525;
+  width: 100%;
+}
+
+.btn-roll:hover span{
+	transform:translate3d(0px,0px,-30px) rotateX(90deg);
+  padding-top:0;
+}
+
+
+
+
+
+
+
+
+
+
+.btn-roll2{
+	background-color: transparent;
+  margin-left:15px;
+  border: 2px solid #ffe05e;
+
+}
+.btn-roll2 span{
+	display: block;
+	position: relative;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+  transform-style:preserve-3d;
+	color: #ffb000;
+  width: 100%;
+
+}
+.btn-roll2 span:after{
+	display: block;
+	content:"App Store";
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition:0.3s ease-in-out all;
+	transform-origin:50% 0;
+	transform:translate3d(0px,105%,0px) rotateX(-90deg);
+	color: #252525;
+  width: 100%;
+}
+
+.btn-roll2:hover span{
+	transform:translate3d(0px,0px,-30px) rotateX(90deg);
+}
+
+.btn:hover{background-color:#ffe05e; color:#ffffff;}
